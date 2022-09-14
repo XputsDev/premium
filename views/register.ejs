@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A REST APIs website that provides a wide variety of features for developers.">
+<meta name="author" content="Ichika">
+<meta property="og:image" content="/images/Ichika.jpg">
+<title>Zynfx | Register</title>
+
+<link rel="icon" type="image/png" sizes="16x16" href="/images/Ichika.jpg">
+<link href="/css/styless.css" rel="stylesheet">
+<body class="h-100">
+<div class="authincation h-100">
+<div class="container h-100">
+<div class="row justify-content-center h-100 align-items-center">
+<div class="col-md-6">
+<div class="authincation-content">
+<div class="row no-gutters">
+<div class="col-xl-12">
+<div class="auth-form">
+<h4 class="text-center mb-4">Register</h4>
+<form method="POST" action="/users/register">
+<input type="hidden" name="_csrf" value="mRXjuHlo-d9lcGLdOFlqbu4VoMH8jjXSxW5A">
+<div class="form-group">
+<label class="mb-1"><strong>Username</strong></label>
+<input type="text" class="form-control" name="username" placeholder="Username" required>
+</div>
+<div class="form-group">
+<label class="mb-1"><strong>Email</strong></label>
+<input type="email" class="form-control" name="email" placeholder="zynfx@gmail.com" required>
+</div>
+<div class="form-group">
+<label class="mb-1"><strong>Password</strong></label>
+<input type="password" class="form-control" name="password" placeholder="Password" required>
+</div>
+<div class="form-group">
+<label class="mb-1"><strong>Repeat Password</strong></label>
+<input type="password" class="form-control" name="confirmPassword" placeholder="Repeat Password" required>
+</div>
+<div class="text-center mt-4">
+<button type="submit" class="btn btn-primary btn-block">Register</button>
+</div>
+</form>
+<center>
+<div class="new-account mt-3">
+<p>Already have an account? <a class="text-primary" href="/users/login">Log
+in</a></p>
+</div>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+
+  <%- include('layouts/msg')  %> 
+  <%- include('layouts/errors')  %> 
+  
+</center>
+
+<script src="/js/global.min.js" type="650cf1bd527800da08a1f66c-text/javascript"></script>
+<script src="/js/bootstrap-select.min.js" type="650cf1bd527800da08a1f66c-text/javascript"></script>
+<script src="/js/custom.min.js" type="650cf1bd527800da08a1f66c-text/javascript"></script>
+<script src="/js/deznav-init.js" type="650cf1bd527800da08a1f66c-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="650cf1bd527800da08a1f66c-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6be51b26bc8501cd',m:'9waTPDdsEBq_zWF_iaBxdNh4t4kXHerP8X47SRN7dCU-1639628289-0-AQ2UU4sh0bD4i0qVWOLyzu098EPKVBfxsT9qg4ydKdgOoumaTXQS2mRHKAOe0H248vBaHOA9r0gzUcOUBTmbh9PnY1LYZjBfmRcBTIxpDhnM8rW5+pBF9tCeMuHltF7/XQ==',s:[0x4c13b179fc,0x4af316a990],u:'/cdn-cgi/challenge-platform/h/b'}})();</script></body>
+</html>
